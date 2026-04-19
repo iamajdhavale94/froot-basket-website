@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+nav {
+    background: #333;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background: #667eea;
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f4f4f4;
+    border-radius: 10px;
+    margin: 30px 0;
+}
+
+.hero h2 {
+    font-size: 2em;
+    color: #667eea;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #764ba2;
+    margin: 40px 0 20px 0;
+    font-size: 2em;
+}
+
+.services-grid, .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin: 30px 0;
+}
+
+.service-card, .product-card {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    border: 1px solid #e0e0e0;
+}
+
+.service-card:hover, .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.service-card h3, .product-card h3 {
+    color: #667eea;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+.price {
+    display: inline-block;
+    background: #764ba2;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.contact-info {
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 30px 0;
+}
+
+.contact-info p {
+    margin: 15px 0;
+    font-size: 1.1em;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+    
+    nav a {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+    
+    .hero h2 {
+        font-size: 1.5em;
+    }
+}
