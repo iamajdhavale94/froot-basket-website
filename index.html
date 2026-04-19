@@ -1,110 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="mr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Froot Basket - Fresh Imported Fruits</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fruit Basket - Premium Quality Fruits</title>
+
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" href="assets/logo.png" type="image/png"/>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>🍎 Froot Basket</h1>
-            <p>Fresh Imported Fruits • Best Quality • Reasonable Rates</p>
-        </div>
-    </header>
+
+  <!-- Background Overlay -->
+  <div class="bg-overlay"></div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="assets/logo.png" alt="Fruit Basket Logo"/>
+      <h2>Fruit Basket</h2>
+    </div>
 
     <nav>
-        <div class="container">
-            <a href="#home">Home</a>
-            <a href="#services">Services</a>
-            <a href="#products">Our Fruits</a>
-            <a href="#contact">Contact</a>
-        </div>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
     </nav>
 
-    <main class="container">
-        <section id="home">
-            <div class="hero">
-                <h2>Fresh Fruits Delivered to Your Doorstep</h2>
-                <p>Imported directly from farms • Premium quality • Affordable prices</p>
-            </div>
-        </section>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+  </header>
 
-        <section id="services">
-            <h2>Our Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <h3>🏠 Home Delivery</h3>
-                    <p>Fresh fruits delivered to your home with care and speed</p>
-                </div>
-                <div class="service-card">
-                    <h3>🏥 Hospital Delivery</h3>
-                    <p>Special delivery service for hospitals and healthcare facilities</p>
-                </div>
-                <div class="service-card">
-                    <h3>🧺 Pickup Available</h3>
-                    <p>Visit our Froot Basket shaped pickup point to collect your order</p>
-                </div>
-                <div class="service-card">
-                    <h3>🚚 Quick Delivery</h3>
-                    <p>Same-day delivery available for urgent orders</p>
-                </div>
-            </div>
-        </section>
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home" onclick="toggleMenu()">Home</a>
+    <a href="#services" onclick="toggleMenu()">Services</a>
+    <a href="#gallery" onclick="toggleMenu()">Gallery</a>
+    <a href="#contact" onclick="toggleMenu()">Contact</a>
+  </div>
 
-        <section id="products">
-            <h2>Our Premium Fruits</h2>
-            <div class="products-grid">
-                <div class="product-card">
-                    <h3>🍎 Imported Apples</h3>
-                    <p>Washington • Crispy & Sweet</p>
-                    <span class="price">$4.99/lb</span>
-                </div>
-                <div class="product-card">
-                    <h3>🍊 Oranges</h3>
-                    <p>Florida Navel • Juicy & Fresh</p>
-                    <span class="price">$3.99/lb</span>
-                </div>
-                <div class="product-card">
-                    <h3>🍇 Grapes</h3>
-                    <p>Chilean • Seedless</p>
-                    <span class="price">$5.99/lb</span>
-                </div>
-                <div class="product-card">
-                    <h3>🥝 Kiwi</h3>
-                    <p>New Zealand • Ripe & Ready</p>
-                    <span class="price">$6.99/6pcs</span>
-                </div>
-                <div class="product-card">
-                    <h3>🍓 Strawberries</h3>
-                    <p>California • Sweet & Juicy</p>
-                    <span class="price">$4.99/box</span>
-                </div>
-                <div class="product-card">
-                    <h3>🥭 Mangoes</h3>
-                    <p>Alphonso • Premium Quality</p>
-                    <span class="price">$7.99/each</span>
-                </div>
-            </div>
-        </section>
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content fade-up">
+      <h1>फ्रुट बास्केट</h1>
+      <p>Premium Quality Fruit | ताजी फळे आपल्या सेवेत</p>
 
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <div class="contact-info">
-                <p><strong>Phone:</strong> +1 (555) 123-4567</p>
-                <p><strong>Email:</strong> hello@frootbasket.com</p>
-                <p><strong>Pickup Location:</strong> 123 Fruit Street, Downtown (Look for the Froot Basket shaped store!)</p>
-                <p><strong>Delivery Hours:</strong> Mon-Sat: 8 AM - 8 PM</p>
-            </div>
-        </section>
-    </main>
+      <div class="hero-buttons">
+        <a class="btn primary" href="#contact">📞 Call Now</a>
+        <a class="btn secondary" href="#services">🍍 Services</a>
+      </div>
+    </div>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Froot Basket. All rights reserved.</p>
-            <p>Fresh imported fruits at reasonable rates | Home & Hospital Delivery Available</p>
-        </div>
-    </footer>
+    <div class="hero-banner fade-up">
+      <img src="assets/banner.jpg" alt="Fruit Basket Banner"/>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section services" id="services">
+    <h2 class="section-title fade-up">आमच्या सेवा</h2>
+
+    <div class="card-grid">
+      <div class="card fade-up">
+        <h3>🏠 होम डिलिव्हरी</h3>
+        <p>आपल्या घरी ताजी व निवडक फळे पोहोच मिळतील.</p>
+      </div>
+
+      <div class="card fade-up">
+        <h3>🏥 हॉस्पिटल डिलिव्हरी</h3>
+        <p>रुग्णांसाठी स्वच्छ, ताजी व निवडक फळे उपलब्ध.</p>
+      </div>
+
+      <div class="card fade-up">
+        <h3>📦 ऑर्डरनुसार पॅकिंग</h3>
+        <p>ऑर्डरप्रमाणे फळांचे पॅकिंग व योग्य दरात उपलब्ध.</p>
+      </div>
+
+      <div class="card fade-up">
+        <h3>🍇 100% Fresh Fruits</h3>
+        <p>आमची खासियत म्हणजे ताजी आणि स्वच्छ फळे.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="section gallery" id="gallery">
+    <h2 class="section-title fade-up">Fruit Gallery</h2>
+
+    <div class="gallery-grid">
+      <img class="fade-up" src="assets/fruits1.jpg" alt="Fruits"/>
+      <img class="fade-up" src="assets/fruits2.jpg" alt="Fruits"/>
+      <img class="fade-up" src="assets/fruits3.jpg" alt="Fruits"/>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section contact" id="contact">
+    <h2 class="section-title fade-up">संपर्क</h2>
+
+    <div class="contact-box fade-up">
+      <h3>📞 संपर्क नंबर</h3>
+      <p><a href="tel:+917798933902">7798933902</a></p>
+      <p><a href="tel:+918668760654">8668760654</a></p>
+      <p><a href="tel:+917499983544">7499983544</a></p>
+
+      <a class="btn whatsapp" 
+         href="https://wa.me/917798933902" 
+         target="_blank">
+         💬 WhatsApp Now
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2026 Fruit Basket | Premium Quality Fruits</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
