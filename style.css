@@ -294,6 +294,27 @@ nav a:hover {
   .gallery-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+.whatsapp-btn {
+  background: #25d366;
+  color: white;
+}
+
+.whatsapp-btn:hover {
+  transform: scale(1.07);
+  background: #1ebe5d;
+}
+
+.stock-btn {
+  background: #ff5722;
+  color: white;
+}
+
+.stock-btn:hover {
+  transform: scale(1.07);
+  background: #ff7043;
+}
+  
 }
 
 @media(max-width: 600px) {
