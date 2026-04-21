@@ -351,7 +351,31 @@ nav a:hover {
   opacity: 1;
   transform: translateY(0);
 }
+.specs-box {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.4);
+  text-align: left;
+}
 
+.specs-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.specs-box li {
+  font-size: 18px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.specs-box li:last-child {
+  border-bottom: none;
+}
 /* ================================
    RESPONSIVE
 ================================ */
