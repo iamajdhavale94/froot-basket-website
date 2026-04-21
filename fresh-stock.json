@@ -1,1 +1,27 @@
 
+[
+  {
+    "name": "Apple",
+    "emoji": "🍎",
+    "price": "₹250/kg",
+    "desc": "Premium fresh Royal Gala apples"
+  },
+  {
+    "name": "Kiwi",
+    "emoji": "🥝",
+    "price": "₹100/3Piece",
+    "desc": "Fresh yellow bananas"
+  },
+  {
+    "name": "Orange",
+    "emoji": "🍊",
+    "price": "₹150/kg",
+    "desc": "Sweet juicy oranges"
+  },
+  {
+    "name": "Grapes",
+    "emoji": "🍇",
+    "price": "₹120/kg",
+    "desc": "Fresh black & green grapes"
+  }
+]
