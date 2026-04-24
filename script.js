@@ -46,8 +46,7 @@ function csvToJson(csvText) {
 async function loadFreshStock() {
   try {
     // 🔥 Paste your published CSV link here
-    const sheetURL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRka1g0whksLuFyNo8o1CBTjUxdsZ5TZ-rsgYrKlm6mESKqZQyF8VNemq7oO96GfnUdIjkZy77nJNXQ/pubhtml?gid=0&single=true";
-
+    const sheetURL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRka1g0whksLuFyNo8o1CBTjUxdsZ5TZ-rsgYrKlm6mESKqZQyF8VNemq7oO96GfnUdIjkZy77nJNXQ/pub?output=csv";
     // Prevent cache
     const response = await fetch(sheetURL + "&v=" + new Date().getTime());
     const csvText = await response.text();
